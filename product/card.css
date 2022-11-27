@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: rgb(0,123,255,0.3);
+}
+.content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  background: black;
+  padding: 25px 0;
+}
+.navbar.sticky{
+  background: #1b1b1b;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+}
+.menu-list li a:hover{
+  color: #007bff;
+}
+
+.about{
+  padding-top: 2rem;
+}
+.about .title{
+  font-size: 38px;
+  font-weight: 700;
+  padding-top: 3.5rem;
+}
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon{
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+@media (max-width: 1230px) {
+  .content{
+    padding: 0 100px;
+  }
+}
+@media (max-width: 1100px) {
+  .content{
+    padding: 0 40px;
+  }
+}
+@media (max-width: 900px) {
+  .content{
+    padding: 0 30px;
+  }
+}
+@media (max-width: 868px) {
+  body.disabled{
+    overflow: hidden;
+  }
+  .icon{
+    display: block;
+  }
+  .icon.hide{
+    display: none;
+  }
+  .navbar .menu-list{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: #222;
+  }
+  .navbar.show .menu-list{
+    left: 0%;
+  }
+  .navbar .menu-list li{
+    margin-top: 45px;
+  }
+  .navbar .menu-list li a{
+    font-size: 23px;
+    margin-left: -100%;
+  }
+  .navbar.show .menu-list li a{
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a{
+    font-size: 27px;
+  }
+}
+
+/* product card */
+
+.container{
+  display: flex;
+  padding-top: 10rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 10px 10px 5px lightblue;
+}
+
+.card{
+  background: grey;
+  width: 300px;
+  height: 500px;
+  margin:10px;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 10px 10px 5px lightblue;
+}
+
+.image{
+  background-color: aqua;
+  height:200px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+} 
+
+.img-1{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIrEZJZ_56BfvYCZ1XNGsMI2bFiPoIMTg55w&usqp=CAU");
+}
+.img-2{
+  background-image: url("https://petapixel.com/assets/uploads/2017/03/product1.jpeg");
+}
+.img-3{
+  background-image: url("https://5.imimg.com/data5/AW/IX/MY-1384834/earphone-500x500.jpg");
+}
+.img-4{
+  background-image: url("https://images.indianexpress.com/2021/04/Asus-ROG-Phone-5-1200.jpg");
+}
+.img-5{
+  background-image: url("https://5.imimg.com/data5/NX/OI/MY-1402195/commercial-desert-air-cooler-6-feet-metal-body-500x500.jpg");
+}
+.img-6{
+  background-image: url("https://images.indianexpress.com/2022/04/Urbanista-los-angeles-review-featured.jpg");
+}
+.img-7{
+  background-image: url("../image/ca-creative-E1rH__X9SA0-unsplash.jpg");
+}
+.img-8{
+  background-image: url("../image/giorgio-trovato-p0OlRAAYXLY-unsplash.jpg");
+}
+.img-9{
+  background-image: url("../image/grant-ritchie-n_wXNttWVGs-unsplash.jpg");
+}
+.img-10{
+  background-image: url("../image/kiran-ck-LSNJ-pltdu8-unsplash.jpg");
+}
+.img-11{
+  background-image: url("../image/revolt-164_6wVEHfI-unsplash.jpg");
+}
+.img-12{
+  background-image: url("../image/logo.jpg");
+}
+
+.card h2{
+  padding: 10px;
+}
+ .card p{
+  padding: 10px;
+ }
